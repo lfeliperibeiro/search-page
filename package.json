@@ -8,6 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "autoprefixer": "^7",
+    "postcss-flexbugs-fixes": "^4",
+    "postcss-preset-env": "^7.4.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
@@ -15,9 +18,9 @@
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
-    "tailwindcss": "^3.0.23",
-    "postcss": "^8.4.8",
+    "postcss": "^7",
     "prettier": "^2.6.0",
+    "tailwindcss": "^3.0.23",
     "typescript": "^4.5.4",
     "vite": "^2.8.0"
   }
