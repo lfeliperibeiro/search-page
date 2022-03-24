@@ -9,7 +9,7 @@ import {
   switchMap,
   catchError,
 } from 'rxjs/operators';
-import { InputSearch, SearchResult } from './components';
+import { InputSearch, SearchResult, Header } from './components';
 
 function App() {
   const [state, setState] = useState({
@@ -77,14 +77,17 @@ function App() {
   };
 
   return (
-    <div className={'p-8'}>
-      <InputSearch loading={state.loading} onChange={onChange} />
-      <SearchResult
-        data={state.data}
-        errorMessage={state.errorMessage}
-        noResults={state.noResults}
-      />
-    </div>
+    <>
+      <Header />
+      <div className={'p-8'}>
+        <InputSearch loading={state.loading} onChange={onChange} />
+        <SearchResult
+          data={state.data}
+          errorMessage={state.errorMessage}
+          noResults={state.noResults}
+        />
+      </div>
+    </>
   );
 }
 

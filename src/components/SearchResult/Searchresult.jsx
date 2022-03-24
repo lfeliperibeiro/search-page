@@ -7,11 +7,11 @@ export function SearchResult({ data, errorMessage, noResults }) {
           Sem resultado para a sua busca
         </div>
       )}
-      <div className={'grid grid-cols-8 gap-20 p-10'}>
+      <div className={'grid xl:grid-cols-8 grid-cols-3 gap-20 p-10'}>
         {data.map(({ name, uri }) => (
           <div
             key={uri}
-            className={'h-24 w-10 flex flex-col items-center gap-3'}
+            className={'xl:h-24 h-10 w-10 flex flex-col items-center gap-3'}
           >
             <img
               src={`https://fa-search-backend.herokuapp.com/${uri}`}
