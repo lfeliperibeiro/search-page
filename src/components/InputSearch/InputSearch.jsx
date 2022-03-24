@@ -1,6 +1,6 @@
 export function InputSearch({ loading, onChange }) {
     return (
-        <div className={'flex m-8'}>
+        <div className={'flex mb-7'}>
             <input
                 className={'px-3 py-2 border-gray-300 border-2 rounded mr-4 w-full'}
                 placeholder={'Search...'}
